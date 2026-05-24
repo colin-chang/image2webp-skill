@@ -1,4 +1,4 @@
-# image-to-webp
+# image2webp-skill
 
 > 🖼️ **AI Agent Skill** — batch convert JPG/PNG images to WebP format instantly, with a single conversation command.
 >
@@ -7,7 +7,7 @@
 [![Skill](https://img.shields.io/badge/type-Agent%20Skill-blue)](SKILL.md)
 [![Platform: macOS/Linux](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/colin-chang/image-to-webp-skill)](https://github.com/colin-chang/image-to-webp-skill/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/colin-chang/image2webp-skill)](https://github.com/colin-chang/image2webp-skill/releases)
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## What is this?
 
-**image-to-webp** is an **AI Agent Skill** that converts images to WebP format. Tell your agent "convert these images to WebP" and it handles the rest — single file or entire directory, recursive, with compression stats.
+**image2webp-skill** is an **AI Agent Skill** that converts images to WebP format. Tell your agent "convert these images to WebP" and it handles the rest — single file or entire directory, recursive, with compression stats.
 
 It wraps Google's `cwebp` encoder into a simple, agent-friendly interface. No GUI, no drag-and-drop, no manual clicking through Pixelmator. Just point it at a path and walk away.
 
@@ -29,7 +29,7 @@ Converting images to WebP manually is tedious:
 - Save
 - Repeat for every. single. image.
 
-When you have 20 screenshots, this is soul-crushing. **image-to-webp** makes it a one-line conversation:
+When you have 20 screenshots, this is soul-crushing. **image2webp-skill** makes it a one-line conversation:
 
 > "Convert `~/Downloads/` to WebP"
 
@@ -41,7 +41,7 @@ Done. All JPG/PNG files recursively converted. You get a summary with before/aft
 You (via AI Agent)
     │  "Convert this folder to WebP"
     ▼
-Skill: image-to-webp
+Skill: image2webp-skill
     │  scripts/convert.sh <path> [quality]
     ▼
 cwebp (Google WebP encoder, via Homebrew)
@@ -68,7 +68,7 @@ That's it. `cwebp` is part of Google's `webp` package.
 ```bash
 # Clone into your Hermes skills directory
 cd ~/.hermes/skills/custom/
-git clone https://github.com/colin-chang/image-to-webp-skill.git image-to-webp
+git clone https://github.com/colin-chang/image2webp-skill.git image2webp-skill
 ```
 
 ### Usage (via AI Agent)

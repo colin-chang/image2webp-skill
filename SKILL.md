@@ -1,5 +1,5 @@
 ---
-name: image-to-webp
+name: image2webp-skill
 description: 将 JPG/PNG 图片批量转换为 WebP 格式。支持单文件或递归目录。依赖系统已安装的 cwebp 工具。
 trigger:
   - keywords: [转换, webp, 图片压缩, 转格式, convert, to webp]
@@ -9,7 +9,7 @@ trigger:
     - "图片.*webp"
     - "压缩.*图片"
 version: 1.0.0
-repository: https://github.com/colin-chang/image-to-webp-skill
+repository: https://github.com/colin-chang/image2webp-skill
 ---
 
 # Image to WebP Converter

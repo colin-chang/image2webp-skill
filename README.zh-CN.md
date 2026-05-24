@@ -1,4 +1,4 @@
-# image-to-webp
+# image2webp-skill
 
 > 🖼️ **AI Agent Skill** — 一键将 JPG/PNG 图片批量转换为 WebP 格式，只需一句对话即可完成。
 >
@@ -7,7 +7,7 @@
 [![Skill](https://img.shields.io/badge/type-Agent%20Skill-blue)](SKILL.md)
 [![Platform: macOS/Linux](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/colin-chang/image-to-webp-skill)](https://github.com/colin-chang/image-to-webp-skill/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/colin-chang/image2webp-skill)](https://github.com/colin-chang/image2webp-skill/releases)
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## 这是什么？
 
-**image-to-webp** 是一个 **AI Agent Skill**，用来把图片转成 WebP 格式。你对 Agent 说一句「把这些图转成 WebP」，剩下的它全搞定——单张也行，整个文件夹也行，递归扫描，附赠压缩统计。
+**image2webp-skill** 是一个 **AI Agent Skill**，用来把图片转成 WebP 格式。你对 Agent 说一句「把这些图转成 WebP」，剩下的它全搞定——单张也行，整个文件夹也行，递归扫描，附赠压缩统计。
 
 它把 Google 的 `cwebp` 编码器包装成一个简单、对 Agent 友好的接口。不用打开 Pixelmator、不用拖拽、不用一张张手动导出。指定路径，然后去喝茶。
 
@@ -29,7 +29,7 @@
 - 保存
 - 然后对每一张图重复以上步骤……
 
-当你有 20 张截图时，这简直是酷刑。**image-to-webp** 把它变成一句话的事：
+当你有 20 张截图时，这简直是酷刑。**image2webp-skill** 把它变成一句话的事：
 
 > 「把 `~/Downloads/` 转成 WebP」
 
@@ -41,7 +41,7 @@
 你（通过 AI Agent）
     │  "把这个文件夹转成 WebP"
     ▼
-Skill: image-to-webp
+Skill: image2webp-skill
     │  scripts/convert.sh <路径> [质量]
     ▼
 cwebp（Google WebP 编码器，通过 Homebrew 安装）
@@ -68,7 +68,7 @@ brew install webp
 ```bash
 # 克隆到 Hermes skills 目录
 cd ~/.hermes/skills/custom/
-git clone https://github.com/colin-chang/image-to-webp-skill.git image-to-webp
+git clone https://github.com/colin-chang/image2webp-skill.git image2webp-skill
 ```
 
 ### 使用方式（通过 AI Agent）
